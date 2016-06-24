@@ -1,5 +1,5 @@
 ---
-date: "2015-09-15"
+date: "2016-06-24"
 title: "Lepidopter Installation: Help Guides and Resources"
 description: "Helpful resources and guides for getting started with Lepidopter Raspberry Pi image"
 aliases: ["/lepidopter/lepidopter"]
@@ -30,11 +30,13 @@ for a significantly reduced file size (ca. 114M smaller) compared to the zip
 archive. Note that this will require an extra program to be installed depending
 on your OS.
 
+**The default username and password of the image is**: `lepidopter`
+
 ## Verify Lepidopter Raspberry Pi image
 
 ### Importing Lepidopter Signing key
 
-From OONI web server:
+From the OONI web server:
 
 ```
 gpg --fetch-keys https://get.ooni.torproject.org/lepidopter/lepidopter-signing-key.asc
@@ -46,8 +48,7 @@ From a keyserver:
 gpg --keyserver pool.sks-keyservers.net --recv-keys 0xBA56AC5A53E9C7A4
 ```
 
-From additional security the fingeprint of Lepidopter Team (signing key) is
-published her:
+Lepidopter team's fingerprint (image signing key) is published here:
 
 ```
 pub   4096R/0xBA56AC5A53E9C7A4 2016-05-22
@@ -204,7 +205,7 @@ path.
 
 ## Run an App (Only with graphical interface)
 
-### Pi Filler 
+### Pi Filler
 [Pi Filler](http://ivanx.com/raspberrypi) a simple tool for copying a Raspberry
 Pi operating system image file to an SD card, or restoring an SD card backup
 created by [Pi Copier](http://ivanx.com/raspberrypi). Version 1.3 is about 5x
@@ -363,6 +364,28 @@ is the location of the .img file.
 yes and press enter. If you get an access denied error, make sure to close all
 explorer windows or folders open for the device, then try re-plugging the SD
 card.
+
+# Community Information and Contributing
+
+## Report bugs
+
+Lepidopter bugs, feauture requests and usability issues should be filled
+[here](https://github.com/TheTorProject/lepidopter/issues).
+
+## Participate
+
+For people already running a Lepidopter probe and would like to follow up on
+operators specific discussion you are welcome to subscribe to the low volume
+[ooni-operators]
+(https://lists.torproject.org/cgi-bin/mailman/listinfo/ooni-operators) mailing
+list.
+
+## Contribute
+
+Lepidopter distribution build scripts, and code is hosted [here]
+(https://github.com/TheTorProject/lepidopter). You are welcome to contribute
+by sending up patches or pull requests. Read on how you can
+[get involved](../../get-involved/) and reach us out.
 
 # Sources
 
